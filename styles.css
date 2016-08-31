@@ -1,0 +1,268 @@
+body {
+    margin: 0 auto;
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    line-height: 1.5;
+    color: #555;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 1em;
+}
+
+h1, h2, h3, h4 {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+
+.nav {
+    padding: 0em 2em;
+}
+
+
+.nav.navbar-nav.navbar-right a {
+    font-size: 120%;
+}
+
+.nav.navbar-nav.navbar-right a:visited {
+    color: white;
+}
+
+.nav.navbar-nav.navbar-right a:link {
+    color: white;
+}
+
+.nav.navbar-nav.navbar-right a:active {
+    color: #FA6900;
+}
+
+.nav.navbar-nav.navbar-right a:hover {
+    color: #FA6900;
+}
+
+.page {
+    background-color: white; 
+    padding: 5em 15%; 
+    margin: auto
+}
+
+.page:nth-of-type(odd) {
+    background-color: #dff2f1;
+}
+
+.page h1 {
+    color: #69D2E7;
+}
+
+.titlepage {
+    background-color: #69D2E7;
+    margin: 0;
+    height: 100vh;
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+
+.footerpage {
+    background-color: #0b3c46;
+    margin: 0;
+    height: 100vh;
+    display: table;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.titlepage span, .footerpage span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.titlepage h1, .footerpage h1 {
+    color: white;
+    margin-bottom: 
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.wrapper .glyphicon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.white {
+    color: white;
+}
+
+.orange-box {
+    background-color: #FA6900;
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    right: 0px;
+}
+
+.current-page {
+    color: #F38630;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    float: left;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+[class*="col-"] {
+    margin-bottom: 2em;
+}
+
+.modal-title {
+    text-align: center;
+    color: white;
+}
+
+.modal-header {
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #F38630;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+ }
+
+#space-explorer-thumbnail {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #F38630;
+    opacity: 0.0;
+}
+
+
+.project-info {
+    color: #C0C0C0;
+    padding: 0em 1em;
+}
+
+#title-text-left {
+    float: left;
+    text-align: right;
+    width: 48%
+}
+
+#title-text-right {
+    float: right;
+    text-align: left;
+    width: 48%
+}
+
+#title-divider {
+    float: left;
+    text-align: center;
+    width: 4%
+}
+
+.glyphicon {
+    font-size: 25px;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #F38630;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+    
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+
+.hovereffect:hover img {
+  opacity: 0.3;
+  filter: alpha(opacity=70);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect h3 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover p, .hovereffect:hover h3 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
