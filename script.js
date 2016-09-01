@@ -27,7 +27,7 @@ $(function() {
 
 // alternates side and rotates title with the ones in the list
 // list of titles
-var titleQueue = ['Creator', 'Developer', 'Innovater', 'Thinker', 'Designer'];
+var titleQueue = ['Creator', 'Thinker', 'Innovater', 'Builder', 'Designer'];
 
 // true is left, false is right
 var sideToChangeLeft = true;
@@ -77,7 +77,7 @@ $(function() {
     $('a[href*="#"]:not([href="#"]):not([href*="#slider"])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var target = $(this.hash);
-            var navOffset = this.hash.slice(1) === 'contact' ? 0 : $('nav').height();
+            var navOffset = this.hash.slice(1) === 'contact' ? 0 : $('.navbar-header').height();
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             if (target.length) {
                 $('html, body').animate({
