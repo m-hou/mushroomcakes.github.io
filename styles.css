@@ -9,8 +9,39 @@ body {
     .titlepage h1 {
         font-size: 600%;
     }
+    
     .titlepage h2, .footerpage h2 {
         font-size: 300%;
+    }
+    
+    #title-text-left {
+        float: left;
+        text-align: right;
+        width: 47.5%
+    }
+
+    #title-text-right {
+        float: right;
+        text-align: left;
+        width: 47.5%
+    }
+
+    #title-divider {
+        float: left;
+        text-align: center;
+        width: 5%
+    }
+
+    .glyphicon {
+        font-size: 25px;
+    }
+    
+    .orange-box {
+    background-color: #FA6900;
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    right: 0px;
     }
 }
 
@@ -29,8 +60,40 @@ body {
     .titlepage h1, .footerpage h1 {
         font-size: 12vw;
     }
+    
     .titlepage h2, .footerpage h2 {
         font-size: 6vw;
+    }
+    
+        
+    #title-text-left {
+        float: left;
+        text-align: right;
+        width: 46%
+    }
+
+    #title-text-right {
+        float: right;
+        text-align: left;
+        width: 46%
+    }
+
+    #title-divider {
+        float: left;
+        text-align: center;
+        width: 8%
+    }
+
+    .glyphicon {
+        font-size: 18px;
+    }
+    
+    .orange-box {
+    background-color: #FA6900;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    right: 0px;
     }
 }
 
@@ -133,14 +196,6 @@ h1, h2, h3, h4 {
     color: white;
 }
 
-.orange-box {
-    background-color: #FA6900;
-    position: absolute;
-    height: 35px;
-    width: 35px;
-    right: 0px;
-}
-
 .current-page {
     color: #F38630;
 }
@@ -164,6 +219,10 @@ li {
 
 [class*="col-"] {
     margin-bottom: 2em;
+}
+
+.modal-body li {
+    margin-top: 1em;
 }
 
 .modal-title {
@@ -195,28 +254,6 @@ li {
 .project-info {
     color: #C0C0C0;
     padding: 0em 1em;
-}
-
-#title-text-left {
-    float: left;
-    text-align: right;
-    width: 48%
-}
-
-#title-text-right {
-    float: right;
-    text-align: left;
-    width: 48%
-}
-
-#title-divider {
-    float: left;
-    text-align: center;
-    width: 4%
-}
-
-.glyphicon {
-    font-size: 25px;
 }
 
 .hovereffect {
