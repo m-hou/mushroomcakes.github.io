@@ -137,10 +137,10 @@ h1, h2, h3, h4 {
     color: white;
 }
 
-.nav {
+.navbar {
     padding: 0em 2em;
+    background-color: #0b3c46
 }
-
 
 .nav.navbar-nav.navbar-right a {
     font-size: 120%;
@@ -154,11 +154,15 @@ h1, h2, h3, h4 {
     color: white;
 }
 
-.nav.navbar-nav.navbar-right a:active {
-    color: #FA6900;
+.nav.navbar-nav.navbar-right a:hover {
+    color: #F38630;
 }
 
-.nav.navbar-nav.navbar-right a:hover {
+.nav.navbar-nat.navbar-right a:active {
+    color: #F38630;
+}
+
+.current-page {
     color: #FA6900;
 }
 
@@ -196,8 +200,8 @@ h1, h2, h3, h4 {
     color: white;
 }
 
-.current-page {
-    color: #F38630;
+p {
+    line-height: 1.5em
 }
 
 img {
@@ -213,8 +217,13 @@ img {
 ul {
     margin-bottom: 1em;
 }
-li {
+
+li:not(.nav li){
     margin-bottom: 0.5em;
+}
+
+.nav li {
+    margin-bottom: 0em;
 }
 
 [class*="col-"] {
