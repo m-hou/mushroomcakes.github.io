@@ -196,10 +196,6 @@ h1, h2, h3, h4 {
     color: white;
 }
 
-.orange {
-    color: #FA6900;
-}
-
 p {
     line-height: 1.5em
 }
@@ -283,6 +279,10 @@ li:not(.nav li){
 
 .glyphicon.link:hover{
     opacity: 0.5;
+}
+
+.glyphicon.link {
+    color: #FA6900;
 }
 
 .hovereffect {
