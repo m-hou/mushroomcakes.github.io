@@ -6346,6 +6346,7 @@ button.close {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
   background-repeat: repeat-x;
 }
+
 .carousel-control:hover,
 .carousel-control:focus {
   color: #fff;

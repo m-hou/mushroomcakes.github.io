@@ -48,8 +48,15 @@
         <a name="about-me"></a>
         <div class="page">
             <h1> About Me </h1>
-            <h3><p>I'm a 2nd year Computer Science & Statistics Student studying at UBC.
-                I enjoy playing piano, sketching both digitally and on paper, playing badminton, and working on programming projects.</p></h3>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <h3><p>I'm a 2nd year <b>Computer Science</b> & <b>Statistics</b> student studying at UBC.
+                    I enjoy many activities, like practicing piano, sketching both digitally and on paper, playing badminton.</p></h3>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <h3><p>Of course, I especially love working on programming projects. I recently been exploring <b>mobile app</b> development and <b>front-end web</b> development.</p></h3>
+                </div>
+            </div>
         </div>
         
         <a name="projects"></a>
@@ -63,18 +70,16 @@
                     <div class="modal-dialog">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <button class="close" type="button" data-dismiss="modal"><span class="glyphicon glyphicon-remove-sign"></span></button>
+                        <button class="close" type="button" data-dismiss="modal"><span class="glyphicon glyphicon-remove-sign white"></span></button>
                         <h2 class="modal-title">Space Explorer</h2>
                     </div><!--END MODAL HEADER-->
                     
                     <div class="modal-body">
-                        
-                    <div class="project-info">
-                        <h4>
-                            Personal Project
-                            <p style="float: right;">May - Aug 2016 
-                        </h4>
-                    </div>
+
+                    <h4 class="greyed-text">
+                        <p style="float: left;">Personal Project
+                        <p style="float: right;">May - Aug 2016 
+                    </h4>
                         
                     <div class="carousel slide" id="slider-gardathon" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -102,14 +107,19 @@
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
                     </div><!--END CAROUSEL-->
-                        
+
                     <h4><ul>
                         <li>Created a space-themed “endless-runner” type game in Java and ported to Swift</li>
-                        <li>Planning to submit to iOS AppStore</li>
                         <li>Implemented game physics from scratch (contact detection, object dynamics) and features such as pausing, menus, score tracking, and vector graphics</li>
-                        <li>Made use frameworks such as UIKit, SpriteKit, and CoreMotion and utilized     object-oriented design in the game model</li>
+                        <li>Made use of frameworks such as UIKit, SpriteKit, and CoreMotion and implemented object-oriented design in the game model</li>
                     </ul></h4>
-                        
+                    
+                    <div class="app-store-link">
+                        <a href="https://itunes.apple.com/us/app/id1149159384" target="_blank">
+                        <img class="responsive-image" src="Download_on_the_App_Store_Badge_US-UK_135x40.svg">
+                        </a>
+                    </div>
+
                     </div><!--END MODAL BODY-->
                     </div>
                     </div>
@@ -130,7 +140,7 @@
                                     </div>
                                 </div>   
                                 <div class="orange-box"></div>
-                                <span class="glyphicon glyphicon-link white"></span>
+                                <span class="glyphicon glyphicon-fullscreen white"></span>
                             </div>
                         </a>
                     </div>
@@ -141,20 +151,20 @@
                     <div class="modal-dialog">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <button class="close" type="button" data-dismiss="modal"><span class="glyphicon glyphicon-remove-sign"></span></button>
+                        <button class="close" type="button" data-dismiss="modal"><span class="glyphicon glyphicon-remove-sign white"></span></button>
                         <h2 class="modal-title">Gardathon</h2>
                     </div><!--END MODAL HEADER-->
                     
                     <div class="modal-body">
                         
-                    <div class="project-info">
+                    <div class="greyed-text">
                         <h4>
-                            Personal Project
-                            <p style="float: right;">Feb 2016
+                            <p style="float: left;">Personal Project
+                            <p style="float: right;">Feb 2016 
                         </h4>
                     </div>
                         
-                    <div class="carousel slide" id="slider-space-explorer" data-ride="carousel">
+                    <div class="carousel slide" id="slider-gardathon" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#dataslider" data-slide-to="0" class="active"></li>
                         <li data-target="#dataslider" data-slide-to="1"></li>
@@ -172,19 +182,19 @@
                         </div>
                     </div>
                     
-                    <a class="left carousel-control" href="#slider-space-explorer" data-slide="prev">
+                    <a class="left carousel-control" href="#slider-gardathon" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
                     </a>
 
-                    <a class="right carousel-control" href="#slider-space-explorer" data-slide="next">
+                    <a class="right carousel-control" href="#slider-gardathon" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
                     </div><!--END CAROUSEL-->
                         
                     <h4><ul>
-                        <li>Developed a gardening simulator game in Racket with the use of functional programming</li>
+                        <li>Used functional programming to develop a gardening simulator game in Racket</li>
                         <li>Made with a team of five during nwHacks</li>
-                        <li>Modelled and implemented the data structure</li>
+                        <li>Modelled the data structure and implemented it with a systematic approach</li>
                     </ul></h4>
                         
                     </div><!--END MODAL BODY-->
@@ -207,12 +217,92 @@
                                     </div>
                                 </div>   
                                 <div class="orange-box"></div>
-                                <span class="glyphicon glyphicon-link white"></span>
+                                <span class="glyphicon glyphicon-fullscreen white"></span>
                             </div>
                         </a>
                     </div>
                     
                     
+                    <!-- MODAL POPUP -->
+                    <div class="modal fade" id="mind-the-gap">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" type="button" data-dismiss="modal"><span class="glyphicon glyphicon-remove-sign white"></span></button>
+                        <h2 class="modal-title">Gardathon</h2>
+                    </div><!--END MODAL HEADER-->
+                    
+                    <div class="modal-body">
+                        
+                    <div class="greyed-text">
+                        <h4>
+                            <p style="float: left;">Academic Project
+                            <p style="float: right;">Mar - Apr 2016 
+                        </h4>
+                    </div>
+                        
+                    <div class="carousel slide" id="slider-mind-the-gap" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#dataslider" data-slide-to="0" class="active"></li>
+                        <li data-target="#dataslider" data-slide-to="1"></li>
+                        <li data-target="#dataslider" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="/Resources/Mind-The-Gap/MTG2.png">
+                        </div>
+                        <div class="item">
+                            <img src="/Resources/Mind-The-Gap/MTG3.png">
+                        </div>
+                        <div class="item">
+                            <img src="/Resources/Mind-The-Gap/MTG4.png">
+                        </div>
+                    </div>
+                    
+                    <a class="left carousel-control" href="#slider-mind-the-gap" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+
+                    <a class="right carousel-control" href="#slider-mind-the-gap" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                    </div><!--END CAROUSEL-->
+                        
+                    <h4><ul>
+                        <li>Completed the implementation of an Android application that maps subway lines and provides real-time arrival data</li>
+                        <li>Used JSON-format parsing to retrieve information from open data servers</li>
+                        <li>Utilized the OSMDroid API to plot lines and stations on a MapView</li>
+                        <li>Tested using jUnit</li>
+                        <li>Received a mark of 100% on both phases of the project</li>
+                    </ul></h4>
+                        
+                    </div><!--END MODAL BODY-->
+                    </div>
+                    </div>
+                    </div><!--END MODAL-->
+                    
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <a href="#" data-toggle="modal" data-target="#mind-the-gap">
+                            <div class="wrapper">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="/Resources/Mind-The-Gap/MTG1.png">
+                                    <div class="overlay">
+                                        <h3>
+                                            Mind The Gap
+                                        </h3>
+                                        <p>
+                                            Click For More Info
+                                        </p>
+                                    </div>
+                                </div>   
+                                <div class="orange-box"></div>
+                                <span class="glyphicon glyphicon-fullscreen white"></span>
+                            </div>
+                        </a>
+                    </div>
+                 
+                              
+                 
                     <!-- MODAL POPUP -->
                     <div class="modal" id="mind-the-gap">
                         <div class="modal-dialog">
@@ -228,6 +318,7 @@
                                         <li>Used JSON-format parsing to retrieve information from open data servers</li>
                                         <li>Utilized the OSMDroid API to plot lines and stations on a MapView</li>
                                         <li>Tested using jUnit</li>
+                                        <li>Received a mark of 100% on both phases of the project</li>
                                     </ul></h4>
                                 </div>
                             </div>
@@ -235,10 +326,6 @@
                     </div>
                     <!-- END MODAL POPUP -->
 
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <a href="#" data-toggle="modal" data-target="#mind-the-gap">
-                            <img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/2015/10/14/nasa-2.jpg"></a>
-                    </div>
                 </div>  
             </div>
         </div>
@@ -254,8 +341,15 @@
             <div class="white-space">
             <div class = "row">
                 <div class="col-md-4 col-sm-12">
-                    <h3>Teaching Assistant</h3>
-                    <h4>Starting Sept 2016</h4>
+                    <h3><b>Teaching Assistant</b></h3> 
+                    <h4 class=greyed-text>UBC Computer <span class=nobr>Science
+                        <a href="https://www.cs.ubc.ca/" target="_blank">
+                            <span class="glyphicon glyphicon-link link"></span>
+                        </a>
+                        </span>
+                    <br>
+                    Starting Sept 2016
+                    </h4>
                 </div>
                 <div class="col-md-8 col-sm-12">
                     <h4><ul>
@@ -270,13 +364,20 @@
             <div class="white-space">
             <div class = "row">
                 <div class="col-md-4 col-sm-12">
-                    <h3>David Nairne & Associates</h3>
-                    <h4>Summer 2014</h4>
+                    <h3><b>Intern</b></h3>
+                    <h4 class=greyed-text>David Nairne & <span class=nobr>Associates 
+                        <a href="http://www.davidnairne.com/" target="_blank">
+                            <span class="glyphicon glyphicon-link link"></span>
+                        </a>
+                        </span>
+                    <br>
+                    Summer 2014
+                    </h4>
                 </div>
                 <div class="col-md-8 col-sm-12">
                     <h4><ul>
                         <li>Civil engineering company</li>
-                        <li>Managed documents and created a floor plan for a house using Google SketchUp</li>
+                        <li>Created a house floor plan using Google SketchUp</li>
                     </ul></h4>
                 </div>
             </div>
@@ -289,8 +390,14 @@
             <div class="white-space">
             <div class = "row">
                 <div class="col-md-4 col-sm-12">
-                    <h3>University of British Columbia</h3>
-                    <h4>2015 – Present</h4>
+                    <h3><b>Major in Computer Science & Statistics</b></h3>
+                       <h4 class=greyed-text>University of British <span class=nobr>Columbia 
+                        <a href="https://www.ubc.ca/" target="_blank">
+                            <span class="glyphicon glyphicon-link link"></span>
+                        </a>
+                        </span>
+                    <br>
+                    2015 – Present</h4>
                 </div>
                 <div class="col-md-8 col-sm-12">
                     <h4><ul>
@@ -306,40 +413,68 @@
         <a name="skills"></a>
         <div class="page">
             <h1> Skills </h1>
-            <div class="white-space">
-                <h2>Programming Languages</h2>
-                <h4><ul>
-                    <li>Racket</li>
-                    <li>Java</li>
-                    <li>Swift</li>
-                </ul></h4>
+            <div align="center">
+                <br>
+                <div class="white-space">
+                    <h2>Programming Languages</h2>
+                    <h3>
+                        <table>
+                        <tr>
+                        <th>Racket</th>
+                        <th>Java</th> 
+                        <th>Swift</th>
+                        </tr>
+                        </table>
+                    </h3>
                 </div>
-            <div class="white-space">
-                <h2>Web Development</h2>
-                <h4><ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>JQuery</li>
-                    <li>BootStrap</li>
-                </ul></h4>
-            </div>
-            <div class="white-space">
-                <h2>Tools</h2>
-                <h4><ul>
-                    <li>Racket</li>
-                    <li>IntelliJ</li>
-                    <li>XCode</li>
-                    <li>Brackets</li>
-                    <li>Git</li>
-                </ul></h4>
+                <br>
+                <div class="white-space">
+                    <h2>Web Development</h2>
+                    <h3>
+                        <table>
+                        <tr>
+                        <th>HTML</th>
+                        <th>CSS</th> 
+                        <th>JavaScript</th>
+                        </tr>
+                        <tr>
+                        <th>jQuery</th> 
+                        <th>Bootstrap</th>
+                        </tr>
+                        </table>
+                    </h3>
+                </div>
+                <br>
+                <div class="white-space">
+                    <h2>Tools</h2>
+                    <h3>
+                        <table>
+                        <tr>
+                        <th>Dr.Racket</th>
+                        <th>IntelliJ</th> 
+                        <th>XCode</th>
+                        </tr>
+                        <tr>
+                        <th>Brackets</th> 
+                        <th>Git</th>
+                        </tr>
+                        </table>
+                    </h3>
+                </div>
+                <br>
             </div>
         </div>
         
         <a name="contact"></a>
         <div class="footerpage">
             <span>
-                <h1>Contact</h1>
+            <div class="col-md-12 col-sm-12">
+                <h1 style="margin-bottom:0.25em;"> Contact </h1>
+                <h1 style="margin-bottom:0em;">
+                    <a href="mailto:michael-hou@outlook.com" target="_top"><div class="glyphicon glyphicon-envelope link"></div></a>
+                </h1>
+                <h4> michael-hou@outlook.com </h4>
+            </div>  
             </span>
         </div>
         <script src="script.js"></script>
