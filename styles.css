@@ -158,6 +158,14 @@ h1, h2, h3, h4 {
     color: #F38630;
 }
 
+.navbar-default .navbar-brand:visited, .navbar-default .navbar-brand:link {
+    color: white;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:active  {
+    color: #F38630;
+}
+
 .current-page {
     color: #FA6900;
 }
