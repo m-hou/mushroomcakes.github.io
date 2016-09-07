@@ -1,21 +1,37 @@
 /*globals $:false */
 
 //https://github.com/twbs/bootstrap/issues/14040 ramon18
+// TODO: Add any custom classes with 'position: fixed' to the selector below
 //fix modal popup navbar shift
 var fixedCls = '.navbar-fixed-top,.navbar-fixed-bottom';
-var oldSSB = $.fn.modal.Constructor.prototype.setScrollbar;
-$.fn.modal.Constructor.prototype.setScrollbar = function () {
-    oldSSB.apply(this);
-    if (this.bodyIsOverflowing && this.scrollbarWidth)
-        $(fixedCls).css('padding-right', this.scrollbarWidth);
-};
+    var oldSSB = $.fn.modal.Constructor.prototype.setScrollbar;
+    $.fn.modal.Constructor.prototype.setScrollbar = function () {
+        oldSSB.apply(this);
+        if (this.bodyIsOverflowing && this.scrollbarWidth)
+            $(fixedCls).css('padding-right', this.scrollbarWidth);
+    }
 
-var oldRSB = $.fn.modal.Constructor.prototype.resetScrollbar;
-$.fn.modal.Constructor.prototype.resetScrollbar = function () {
-    oldRSB.apply(this);
-    $(fixedCls).css('padding-right', '');
-};
+    var oldRSB = $.fn.modal.Constructor.prototype.resetScrollbar;
+    $.fn.modal.Constructor.prototype.resetScrollbar = function () {
+        oldRSB.apply(this);
+        $(fixedCls).css('padding-right', '');
+    }
 
+$(document).ready(function () {
+    $('.modal').on('show.bs.modal', function () {
+        if ($(document).height() > $(window).height()) {
+            // no-scroll
+            $('body').addClass("modal-open-noscroll");
+        }
+        else {
+            $('body').removeClass("modal-open-noscroll");
+        }
+    });
+    $('.modal').on('hide.bs.modal', function () {
+        $('body').removeClass("modal-open-noscroll");
+    });
+})
+    
 //carousel settings
 $(function() {
     $('.carousel').carousel({

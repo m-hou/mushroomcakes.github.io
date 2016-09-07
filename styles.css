@@ -146,6 +146,10 @@ h1, h2, h3, h4 {
     background-color: #0b3c46
 }
 
+.navbar-fixed-top {
+    padding-right: inherit;
+}
+
 .nav.navbar-nav.navbar-right a {
     font-size: 120%;
 }
@@ -233,6 +237,7 @@ li:not(.nav li){
 .nav li {
     margin-bottom: 0em;
 }
+
 
 [class*="col-"] {
     margin-bottom: 2em;
